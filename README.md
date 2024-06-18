@@ -14,6 +14,7 @@ Features:
 Validates each VCF file format.
 Handles quoted-printable encoding.
 Outputs any errors encountered during processing.
+
 2. split.php
 Description: Splits a large combined.vcf file into smaller files, each containing up to 12,000 vCards.
 
@@ -25,6 +26,7 @@ Features:
 
 Splits the file into chunks based on vCard count.
 Outputs each split file as combined_index.vcf.
+
 3. delDuplicate.php
 Description: Merges duplicated vCards in a VCF file based on a common identifier (e.g., phone number).
 
@@ -36,6 +38,7 @@ Features:
 
 Identifies and merges vCards with the same identifier.
 Outputs merged vCards as combined_merged.vcf.
+
 4.read.php
 Description: Shows vCards in the VCF file in a table.
 
@@ -46,9 +49,11 @@ Run the script read.php via CLI or web server.
 Features:
 
 shows all Vcards in a vcf file.
+
 Requirements
 PHP (version 5.4 or higher recommended)
 Web server (for web execution) or CLI environment
+
 Example Use Case
 If you have multiple VCF files from different sources and want to merge them into a single file for import into a phone or email client, you can use combine_vcf.php. After merging, you can split the large file into smaller chunks using split_vcf.php to comply with import limitations. If there are duplicate contacts due to overlaps between sources, merge_duplicates.php can clean up the file by consolidating duplicate entries.
 
