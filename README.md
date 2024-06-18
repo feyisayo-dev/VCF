@@ -1,4 +1,4 @@
-#VCF File Handling Scripts
+VCF File Handling Scripts
 This repository contains PHP scripts to handle VCF (vCard) files, including combining multiple VCF files, splitting a combined VCF file into smaller files, and merging duplicate vCards based on a common identifier.
 
 Scripts Overview
